@@ -4,7 +4,7 @@ socket = null;
 function initSocket(id) {
 
 	//FIXME: ここをいい感じに変える必要がある
-	socket = io('https://remo-tako-1980.appspot.com');
+	socket = io('https://remo-tako-1980.appspot.com:80');
   	socket.on('log', function (data) {
     	console.log(data);
   	});
