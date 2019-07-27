@@ -3,7 +3,7 @@ socket = null;
 
 function initSocket(id) {
 
-	socket = io('http://internal16.beer-server.org/');
+	socket = io('http://internal16.beer-server.org:80');
   	socket.on('log', function (data) {
     	console.log(data);
   	});
