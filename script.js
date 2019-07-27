@@ -11,8 +11,9 @@ $(function() {
 
     peer.on('open', () => {
         $('#my-id').text(peer.id);
-    step1();
-});
+        step1();
+        initSocket(peer.id);
+    });
 
     // Receiving a call
     peer.on('call', call => {
