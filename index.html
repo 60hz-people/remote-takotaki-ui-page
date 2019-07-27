@@ -22,22 +22,36 @@
   <script type="text/javascript" src="motion-socket.js"></script>
   <script type="text/javascript" src="key.js"></script>
   <script type="text/javascript" src="script.js"></script>
-
 </head>
 
 <body>
+<div class="takoyaki-wrapper">
+  <h1>りもーとたこぱ</h1>
+  <!-- video-container -->
+  <div id="video-container">
+    <!-- their-video -->
+    <video id="their-video" autoplay></video>
+    <!-- my-video -->
+    <video id="my-video" muted="true" autoplay></video>
+  </div>
+  <!-- /video-container -->
+
+
+
+</div>
+
 
 <div class="container-fluid">
   <div class="row">
 
-    <!-- their-video -->
-    <div class="col-sm-8" id="video-container">
+    <!-- their-video いったん退避で2ってつけてる TODO けす -->
+    <!-- <div class="col-sm-8" id="video-container2">
       <video id="their-video" autoplay></video>
-    </div>
+    </div> -->
 
     <!-- Steps -->
     <div class="col-sm-4">
-      <h2>リモートタコパ</h2>
+      <h3>設定</h3>
 
       <div class="select">
         <label for="audioSource">Audio input source: </label><select id="audioSource"></select>
@@ -74,8 +88,8 @@
         <p><a href="#" class="pure-button pure-button-error" id="end-call">End call</a></p>
       </div>
 
-      <!-- my-video -->
-      <video id="my-video" muted="true" autoplay></video>
+      <!-- my-video たいひのために２つけてる TODO 消す-->
+      <!-- <video id="my-video2" muted="true" autoplay></video> -->
     </div>
   </div>
 </div>

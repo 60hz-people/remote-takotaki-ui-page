@@ -256,6 +256,10 @@ table {
   border-spacing: 0
 }
 
+html {
+    height: 100%;
+}
+
 .pure-button {
   display: inline-block;
   *display: inline;
@@ -1045,28 +1049,52 @@ table {
 }
 
 #my-video {
+  width: 30%;
+  height: auto;
+  background-color: #000;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#their-video {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  position: relative;
+}
+
+#video-container {
+  text-align: center;
+  position: relative;
+}
+
+#step1-error, #step2, #step3 {
+  display: none;
+  padding: 24px;
+}
+
+#my-id {
+  font-weight: bold;
+}
+
+.takoyaki-wrapper {
+  padding: 40px 25px;
+}
+
+#video-container2 {
+  padding: 25px;
+  text-align: center;
+}
+
+#my-video2 {
   margin-top: 15px;
   width: 280px;
   height: auto;
   background-color: #eee;
 }
 
-#their-video {
-  width: 100%;
-  height: 75%;
-  max-height: 480px;
-  background-color: #eee;
+.select{
+  padding: 24px;
 }
 
-#video-container {
-  padding: 25px;
-  text-align: center;
-}
-
-#step1-error, #step2, #step3 {
-  display: none;
-}
-
-#my-id {
-  font-weight: bold;
-}

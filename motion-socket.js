@@ -3,7 +3,8 @@ socket = null;
 
 function initSocket(id) {
 
-	socket = io('http://internal16.beer-server.org:80');
+	//FIXME: ここをいい感じに変える必要がある
+	socket = io('https://remo-tako-1980.appspot.com');
   	socket.on('log', function (data) {
     	console.log(data);
   	});
